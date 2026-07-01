@@ -103,7 +103,7 @@ export default function DashboardForm({ onGenerate, isLoading }) {
         <label className="block text-xs font-bold text-foreground mb-3 text-muted-foreground uppercase tracking-wider">
           1. Select content type
         </label>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {contentTypes.map((type) => {
             const Icon = type.icon;
             const isSelected = selectedType === type.id;

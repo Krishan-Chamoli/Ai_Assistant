@@ -130,41 +130,41 @@ export default function ResultDisplay({ generation, onSave, isSaving, hasSaved, 
             <button
               onClick={onSave}
               disabled={isSaving || hasSaved}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer ${
+              className={`flex items-center justify-center p-2 sm:px-3 sm:py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer ${
                 hasSaved
                   ? 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20'
                   : 'bg-primary hover:bg-primary-hover text-primary-foreground border-transparent disabled:opacity-50'
               }`}
             >
               <Bookmark className="h-3.5 w-3.5" />
-              <span>{hasSaved ? 'Saved' : isSaving ? 'Saving...' : 'Save'}</span>
+              <span className="hidden sm:inline ml-1">{hasSaved ? 'Saved' : isSaving ? 'Saving...' : 'Save'}</span>
             </button>
 
             {/* Copy Button */}
             <button
               onClick={handleCopy}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
+              className="flex items-center justify-center p-2 sm:px-3 sm:py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
             >
               {copied ? <Check className="h-3.5 w-3.5 text-emerald-500" /> : <Copy className="h-3.5 w-3.5" />}
-              <span>{copied ? 'Copied' : 'Copy'}</span>
+              <span className="hidden sm:inline ml-1">{copied ? 'Copied' : 'Copy'}</span>
             </button>
 
             {/* Clear Button */}
             <button
               onClick={onClear}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-destructive transition-all cursor-pointer"
+              className="flex items-center justify-center p-2 sm:px-3 sm:py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-destructive transition-all cursor-pointer"
             >
               <Trash2 className="h-3.5 w-3.5" />
-              <span>Clear</span>
+              <span className="hidden sm:inline ml-1">Clear</span>
             </button>
 
             {/* Export Dropdown Trigger */}
             <button
               onClick={() => setShowExportOptions(!showExportOptions)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
+              className="flex items-center justify-center p-2 sm:px-3 sm:py-1.5 rounded-lg border border-border bg-input hover:bg-secondary text-xs font-semibold text-muted-foreground hover:text-foreground transition-all cursor-pointer"
             >
               <Download className="h-3.5 w-3.5" />
-              <span>Export</span>
+              <span className="hidden sm:inline ml-1">Export</span>
             </button>
 
             {/* Export Options Modal Dropdown */}

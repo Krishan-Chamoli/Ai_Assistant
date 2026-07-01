@@ -16,7 +16,7 @@ export default function Navbar({ onMenuClick }) {
   return (
     <header className="sticky top-0 z-30 w-full h-16 border-b border-border bg-card/90 backdrop-blur-md flex items-center px-6 justify-between select-none">
       {/* Left branding & mobile toggle */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         <button
           onClick={onMenuClick}
           className="p-2 rounded-lg text-muted-foreground hover:bg-secondary hover:text-foreground md:hidden cursor-pointer"
@@ -26,7 +26,15 @@ export default function Navbar({ onMenuClick }) {
           <Menu className="h-5 w-5" />
         </button>
 
-        {/* Left Branding Banner */}
+        {/* Mobile Branding Logo + Text */}
+        <div className="flex items-center gap-2 md:hidden select-none">
+          <img src="/logo.png" alt="Nebuloid Logo" className="h-7 w-7 object-contain rounded" />
+          <span className="text-xs font-bold text-foreground tracking-wider uppercase">
+            AI Studio
+          </span>
+        </div>
+
+        {/* Desktop Branding Banner */}
         <div className="hidden md:flex items-center gap-3 select-none">
           <div className="flex flex-col text-left justify-center">
             <span className="text-[14px] font-medium tracking-wider text-foreground leading-none">

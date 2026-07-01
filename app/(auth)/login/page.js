@@ -84,15 +84,17 @@ export default function LoginPage() {
       <div className="w-full max-w-md z-10 animate-fade-in select-none">
         {/* Branding header */}
         <div className="text-center mb-8">
-          <div className="inline-flex p-3 rounded-2xl bg-primary/10 text-primary mb-4 ring-1 ring-primary/20">
-            <Sparkles className="h-8 w-8 animate-pulse-subtle" />
-          </div>
+          <img 
+            src="/logo.png"
+            alt="Nebuloid Logo"
+            className="h-16 w-16 mx-auto object-contain mb-4 rounded-xl animate-pulse-subtle"
+          />
           <h1 className="text-3xl font-extrabold tracking-tight">Nebuloid Tech Studio</h1>
           <p className="text-muted-foreground mt-2">Mini AI Content Assistant Dashboard</p>
         </div>
 
         {/* Auth form card */}
-        <div className="glass rounded-2xl border border-border p-8 shadow-xl bg-card">
+        <div className="glass rounded-2xl border border-border p-6 sm:p-8 shadow-xl bg-card">
           
           {/* Sign In vs Sign Up Mode Tabs */}
           <div className="flex rounded-xl bg-muted p-1 mb-6">
