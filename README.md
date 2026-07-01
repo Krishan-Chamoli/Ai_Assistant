@@ -1,4 +1,4 @@
-# 🌌 Nebuloid Tech Studio LLP — AI Content Studio
+# <img src="public/logo.png" width="36" height="36" style="vertical-align: middle; margin-right: 10px; display: inline-block;" /> Nebuloid Tech Studio LLP — AI Content Studio
 
 A premium, state-of-the-art full-stack AI content generation workspace built with **Next.js**, **JavaScript**, **Tailwind CSS**, **Prisma ORM**, **MongoDB Atlas**, and **Google Gemini AI**. 
 
